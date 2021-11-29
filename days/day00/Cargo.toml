@@ -1,0 +1,8 @@
+[package]
+name = "day00"
+description = "a way to preload dependencies so I don't have to download them later"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+parse-display = "0.5.3"
