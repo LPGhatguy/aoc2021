@@ -1,0 +1,8 @@
+[package]
+name = "day01"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+itertools = "0.10.1"
+parse-display = "0.5.3"
