@@ -1,14 +1,14 @@
 static INPUT: &str = include_str!("../input.txt");
 
-const GESTATION_TIMER: usize = 6;
-const MATURITY_TIMER: usize = 2;
+const GESTATION: usize = 6;
+const MATURY: usize = 2;
 
 fn simulate<const N: usize>(ages: [u64; N]) -> [u64; N] {
     let mut new_ages = [0; N];
 
     let births = ages[0];
-    new_ages[GESTATION_TIMER + MATURITY_TIMER] += births;
-    new_ages[GESTATION_TIMER] += births;
+    new_ages[GESTATION + MATURY] += births;
+    new_ages[GESTATION] += births;
 
     for i in 1..N {
         new_ages[i - 1] += ages[i];
